@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds no Grau</title>
+    
+</head>
+<body>
+
+    <h1>Desafio da Parábola</h1>
+    <p>Ajuste os coeficientes <strong>a</strong>, <strong>b</strong> e <strong>c</strong> da função <strong>y = ax² + bx + c</strong> para atingir o alvo!</p>
+    
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    
+    <div id="equationAndCoords" style="margin: 10px 0; font-size: 1.1em; color: #333;">
+        <span id="equationDisplay"></span> |
+        <span id="targetCoords"></span>
+    </div>
+    <div id="message"></div>
+
+    <div id="controls">
+        <div class="control-group">
+            <label for="sliderA">a: <span id="valueA">-0.01</span></label><br>
+            <input type="range" id="sliderA" min="-0.05" max="0.05" step="0.001" value="-0.01">
+        </div>
+        <div class="control-group">
+            <label for="sliderB">b: <span id="valueB">3</span></label><br>
+            <input type="range" id="sliderB" min="-5" max="10" step="0.1" value="3">
+        </div>
+        <div class="control-group">
+            <label for="sliderC">c: <span id="valueC">50</span></label><br>
+            <input type="range" id="sliderC" min="0" max="200" step="1" value="50">
+        </div>
+        <button id="launchButton">Lançar!</button>
+        <button id="resetButton">Reiniciar</button>
+    </div>
+
+    
+</body>
+</html>
